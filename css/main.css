@@ -1,0 +1,14 @@
+/* Include Fonts */
+
+@import "./fonts.css";
+
+
+/* Variables */
+
+:root {
+    --light-blue: #249AD7;
+    /* --dark-blue: #EEEFF1; */
+    --light-grey: #333437;
+    --dark-grey: #1F2023;
+}
+
