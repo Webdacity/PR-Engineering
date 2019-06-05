@@ -6,9 +6,332 @@
 /* Variables */
 
 :root {
-    --light-blue: #249AD7;
+    --light-blue: #2679F5;
     /* --dark-blue: #EEEFF1; */
-    --light-grey: #333437;
-    --dark-grey: #1F2023;
+    --light-grey: rgb(51, 52, 55);
+    --dark-grey: rgb(31, 32, 35);
 }
 
+/* General */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+/* Navbar */
+
+#navbar {
+    background-color: rgba(31, 32, 35, 0.9);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 0.3s;
+    z-index: 1;
+    display: flex;
+    padding: 5px 0;
+}
+
+.navbar-logo {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar-logo img {
+    width: 15%;
+}
+
+.navbar-logo h1 {
+    color: white;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 0;
+}
+
+.navbar-links {
+    width: 65%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Titillium Web";
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.navbar-links a:hover {
+    color: var(--light-blue);
+}
+
+
+
+
+
+/* Scroll Bars */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark-grey);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--light-blue);
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* HOME PAGE */
+
+/* Home Landing Section */
+
+.home-landing-section {
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    position: relative;
+}
+
+.home-video-container {
+    min-width: 100vw;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.home-video-container-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(31, 32, 35, 0.65);
+    transition: 0.5s;
+}
+
+#homeVideo {
+    width: 100vw;
+}
+
+.home-landing-text  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.home-landing-text h1 {
+    font-family: "Titillium Web";
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    padding: 30px 10%;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.home-landing-text h2 {
+    font-family: "Open Sans";
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+    padding: 30px 10%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+
+.home-landing-text > div:nth-child(2) {
+    height: 2px;
+    width: 50%;
+    margin: auto;
+    background-color: var(--light-blue);
+}
+
+.home-landing-button {
+    margin-top: 30px;
+}
+
+.home-landing-button a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    padding: 5px 30px;
+    font-size: 22px;
+    font-family: "Titillium Web";
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 3px;
+}
+
+.home-landing-button a:hover {
+    color: var(--light-blue);
+    border: 2px solid var(--light-blue);
+    background-color: transparent;
+}
+
+
+
+
+
+/* Home About Section */
+
+.home-about-section {
+    /* height: 100vh; */
+    width: 100vw;
+}
+
+.section-grid-lines{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-template-rows: 10% auto;
+}
+
+.section-grid-lines > div:nth-child(1) {
+    border-right: 0.5px solid rgba(51, 52, 55,0.2);
+    border-bottom: 0.5px solid rgba(51, 52, 55,0.2);
+}
+
+.section-grid-lines > div:nth-child(2) {
+    border-bottom: 0.5px solid rgba(51, 52, 55,0.2);
+}
+
+.section-grid-lines > div:nth-child(4) {
+    border-left: 0.5px solid rgba(51, 52, 55,0.2);
+}
+
+.section-grid-lines-number {
+    font-family: "Open Sans";
+    color: var(--light-grey);
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+}
+
+.home-about-section-text {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.home-about-section-text > div:nth-child(1) {
+    padding-left: 10%;
+    padding-right: 5%;
+    padding-bottom: 20%;
+}
+
+.home-about-section-text > div >div {
+    height: 5px;
+    background-color: var(--dark-grey);
+    width: 20%;
+}
+
+.home-about-section-text h1 {
+    font-family: "Titillium Web";
+    color: var(--dark-grey);
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.home-about-section-text p {
+    color: var(--light-grey);
+    font-family: "Open Sans";
+    font-size: 20px;
+    padding-bottom: 30px;
+    font-weight: 300;
+}
+
+.home-about-button {
+    text-decoration: none;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    background-color: var(--light-blue);
+    border-radius: 3px;
+    padding: 8px 25px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: 2px solid var(--light-blue);
+    transition: 0.4s;
+}
+
+
+.home-about-button:hover {
+    border: 2px solid var(--dark-grey);
+    color: var(--dark-grey);
+    background-color: transparent;
+    font-weight: 500;
+}
+
+.home-about-image {
+    background-image: url("../assets/images/home/home-about-pattern.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+
+
+/* Home Projects Section */
+
+.home-projects-section {
+    background-color: var(--light-grey);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 10% auto;
+}
+
+.home-projects-section > div:nth-child(1) {
+    border-right: 0.5px solid rgba(255, 255, 255, 0.2);
+}
+
+.home-projects-section .section-grid-lines-number {
+    color: white;
+}
+
+.home-projects-grid {
+    background-color: white;
+    margin-left: 10%;
+    width: 80%;
+    margin-right: 10%;
+    position: relative;
+    top: -10%;
+    display: grid;
+}

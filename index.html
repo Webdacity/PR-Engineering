@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>PR Engineering</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,25 +11,100 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="./vendors/font-awesome/css/all.css">
+    <link rel="stylesheet" href="./vendors/hover.css/hover.css">
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./assets/images/PR-Favicon.png">
+    <link rel="icon" type="image/png" href="./assets/images/Logos/PR-Favicon.png">
     <meta name="theme-color" content="#1F2023">
     <meta name="apple-mobile-web-app-status-bar-style" content="#1F2023">
 
 
     <!-- External -->
 
-    <link
-        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Titillium+Web:200,300,400,600,700,900&display=swap"
-        rel="stylesheet">
-
 </head>
 
 <body>
 
+    <div id="navbar">
+        <a class="navbar-logo" href="./index.html">
+            <img src="./assets/images/Logos/PR-Favicon.png" alt="">
+            <h1>Engineering</h1>
+        </a>
 
+        <div class="navbar-links">
+            <a href="./index.html" class="hvr-grow">Home</a>
+            <a href="./about.html" class="hvr-grow">About Us</a>
+            <a href="./services.html" class="hvr-grow">Services</a>
+            <a href="./projects.html" class="hvr-grow">Projects</a>
+            <a href="./contact.html" class="hvr-grow">Contact</a>
+        </div>
+    </div>
+
+    <!-- Landing Home Section -->
+
+    <section class="home-landing-section">
+        <div class="home-video-container">
+            <video autoplay muted loop id="homeVideo">
+                <source src="./assets/videos/landing-video.mp4" type="video/mp4">
+            </video>
+            <div class="home-video-container-cover">
+
+            </div>
+        </div>
+
+        <div class="home-landing-text">
+            <h1>PR ENGINEERING</h1>
+            <div></div>
+            <h2>Mechanical, Fire and Electrical Engineers</h2>
+
+            <div class="home-landing-button">
+                <a href="./projects.html" class="hvr-grow">Our Projects</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Home About Section -->
+
+    <section class="home-about-section">
+        <div class="section-grid-lines">
+            <div></div>
+            <div></div>
+            <div>
+                <h3 class="section-grid-lines-number">01</h3>
+            </div>
+            <div class="home-about-section-text">
+                <div>
+                    <div></div>
+                    <h1>Professional Value-Driven Consulting Engineering Solutions </h1>
+                    <p>PR Engineering is a dynamic and experienced consulting engineering firm with the capacity to
+                        provide comprehensive and value-driven design and project management services. As providers
+                        of engineering solutions to clients in the property, commercial and industrial markets, our
+                        dedicated and professional team of engineering specialists have built a reputation for providing
+                        viable, durable and cost-effective solutions to meet challenging project requirements throughout
+                        Africa.</p>
+                    <a href="./about.html" class="home-about-button hvr-grow">More About Us</a>
+                </div>
+                <div class="home-about-image"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="home-projects-section">
+        <div>
+            <h3 class="section-grid-lines-number">02</h3>
+        </div>
+        <div class="home-projects-grid">
+
+        </div>
+    </section>
+
+
+    <script src="./vendors/jquery/jquery-3.3.1.js"></script>
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>
