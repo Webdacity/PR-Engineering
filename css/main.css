@@ -6,13 +6,13 @@
 /* Variables */
 
 :root {
-    --light-blue: #2679F5;
+    --light-blue: #039EE9;
     /* --dark-blue: #EEEFF1; */
     --light-grey: rgb(51, 52, 55);
     --dark-grey: rgb(31, 32, 35);
 }
 
-/* General */
+/* GENERAL */
 
 body,
 html {
@@ -82,6 +82,106 @@ html {
 
 .navbar-links a:hover {
     color: var(--light-blue);
+}
+
+
+/* Footer */
+
+footer {
+    background-color: var(--dark-grey);
+}
+
+.footer-copy {
+    color: var(--light-grey);
+    text-align: center;
+    font-family: "Open Sans";
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    border-top: 0.5px solid var(--light-grey);
+}
+
+.footer-copy a {
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--light-blue);
+}
+
+.footer-copy a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy p {
+    margin: 0;
+    padding: 20px 0;
+}
+
+footer img {
+    margin: auto;
+    display: block;
+    width: 10%;
+    padding-top: 20px;
+}
+
+.footer-social,
+.footer-nav,
+.footer-contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-social {
+    padding: 20px 45%;
+}
+
+.footer-social a {
+    color: white;
+    transition: 0.4s;
+    font-size: 18px;
+}
+
+.footer-social a:hover {
+    color: var(--light-blue);
+}
+
+.footer-nav {
+    padding: 10px 20%;
+}
+
+.footer-nav a {
+    font-family: "Titillium Web";
+    font-weight: 400;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.4s;
+    text-transform: uppercase;
+}
+
+.footer-nav a:hover {
+    color: var(--light-blue);
+}
+
+.footer-contact {
+    padding: 20px 5%;
+}
+
+.footer-contact a {
+    font-family: "Titillium Web";
+    font-weight: 400;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.footer-contact a:hover {
+    color: var(--light-blue);
+}
+
+.footer-contact a i {
+    color: var(--light-blue);
+    padding-right: 10px;
 }
 
 
@@ -433,11 +533,15 @@ html {
 
 .home-projects-grid a {
     text-decoration: none;
+    transition: 0.6s;
 }
 
 .home-projects-grid a:hover>div {
     opacity: 1;
-    ;
+}
+
+.home-projects-grid a:hover {
+    transform: scale(1.05);
 }
 
 .home-project-details {
@@ -625,7 +729,7 @@ html {
 
 .home-contact-form>* {
     width: 70%;
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
     padding: 10px;
     outline: none;
@@ -668,101 +772,182 @@ html {
 
 
 
-/* Footer */
 
-footer {
-    background-color: var(--dark-grey);
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------- */
+/* CONTACT PAGE */
+
+.contact-section {
+    height: 120vh;
+    background-color: var(--light-blue);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
 }
 
-.footer-copy {
-    color: var(--light-grey);
-    text-align: center;
-    font-family: "Open Sans";
-    color: white;
-    font-weight: 300;
-    font-size: 14px;
-    border-top: 0.5px solid var(--light-grey);
+.contact-section>div:nth-child(1) {
+    background-image: url("../assets/images//contact-page/contact-page.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact-section>div:nth-child(2) {
+    background-color: white;
 }
 
-.footer-copy a {
-    font-weight: 500;
-    text-decoration: none;
-    color: var(--light-blue);
-}
-
-.footer-copy a:hover {
-    text-decoration: underline;
-}
-
-.footer-copy p {
-    margin: 0;
-    padding: 20px 0;
-}
-
-footer img {
+.contact-section>div:nth-child(2)>div {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 80%;
     margin: auto;
-    display: block;
-    width: 10%;
-    padding-top: 20px;
+    position: relative;
+    transform: translateY(-50%);
+    box-shadow: 5px 5px 10px var(--dark-grey);
 }
 
-.footer-social,
-.footer-nav,
-.footer-contact {
+.contact-form {
+    background-color: white;
+    padding: 2% 0;
+}
+
+.contact-info {
+    background-color: var(--dark-grey);
+    padding: 2% 0;
+}
+
+
+
+.contact-info h1, .contact-form h1 {
+    margin: 0;
+    padding: 30px;
+    color: var(--light-blue);
+    font-family: "Titillium Web";
+    font-weight: 400;
+    font-size: 28px;
+}
+
+.contact-info>div:nth-child(2) {
+    padding-left: 40px;
+}
+
+.contact-info>div:nth-child(2) a {
     display: flex;
-    justify-content: space-around;
-}
-
-.footer-social {
-    padding: 20px 45%;
-}
-
-.footer-social a {
+    align-items: center;
     color: white;
-    transition: 0.4s;
-    font-size: 18px;
-}
-
-.footer-social a:hover {
-    color: var(--light-blue);
-}
-
-.footer-nav {
-    padding: 10px 20%;
-}
-
-.footer-nav a {
-    font-family: "Titillium Web";
+    font-family: "Open sans";
     font-weight: 400;
-    color: white;
-    font-size: 17px;
     text-decoration: none;
-    transition: 0.4s;
-    text-transform: uppercase;
-}
-
-.footer-nav a:hover {
-    color: var(--light-blue);
-}
-
-.footer-contact {
-    padding: 20px 5%;
-}
-
-.footer-contact a {
-    font-family: "Titillium Web";
-    font-weight: 400;
-    color: white;
-    font-size: 16px;
-    text-decoration: none;
+    letter-spacing: 1px;
     transition: 0.4s;
 }
 
-.footer-contact a:hover {
+.contact-info i {
+    padding-right: 15px;
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.contact-info>div:nth-child(2) a:hover {
     color: var(--light-blue);
 }
 
-.footer-contact a i {
+.contact-info>div:nth-child(2) a:hover i {
+    color: white;
+    opacity: 1;
+}
+
+.contact-social {
+    padding: 40px;
+}
+
+.contact-social i {
+    color: white;
+    opacity: 0.5;
+    font-size: 24px;
+    margin-right: 20px;
+    transition: 0.4s;
+    padding: 5px;
+}
+
+.contact-social i:hover {
     color: var(--light-blue);
-    padding-right: 10px;
+    opacity: 1;
+}
+
+
+.contact-map-section iframe {
+    width: 100%;
+    height: 60vh;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding-left: 40px;
+}
+
+.contact-form input, .contact-form textarea {
+    border: none;
+    border-bottom: 0.5px solid rgba(51, 52, 55, 0.5);
+    padding: 10px 0;
+    outline: none;
+    width: 70%;
+    margin-bottom: 30px;
+    color: var(--dark-grey) ;
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+
+.contact-form input:focus, .contact-form textarea:focus {
+    color: var(--light-blue);
+    border-bottom: 0.5px solid var(--dark-grey);
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: var(--light-grey);
+    font-weight: 300;
+}
+
+.contact-form input:focus::placeholder {
+    color: var(--light-blue);
+}
+
+.contact-form form input:nth-child(1), .contact-form form input:nth-child(3) {
+    grid-column: 1/4;
+}
+.contact-form form input:nth-child(2), .contact-form form input:nth-child(4) {
+    grid-column: 4/7;
+}
+
+
+.contact-form form textarea:nth-child(5) {
+    grid-column: 1/5;
+    width: 100%;
+}
+
+.contact-form button {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: unset;
+    padding: 20px;
+    background-color: var(--light-blue);
+    border: none;
+    box-shadow: 5px 5px 15px var(--dark-grey);
+    cursor: pointer;
+    grid-column: 5/7;
+}
+
+.contact-form button i {
+    font-size: 20px;
+    color: white;
 }
