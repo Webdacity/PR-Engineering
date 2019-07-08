@@ -18,6 +18,14 @@
     font-weight: 400;
 }
 
+
+@font-face {
+    font-family: "Titillium Web";
+    src: url("./fonts/Titillium_Web/TitilliumWeb-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
 @font-face {
     font-family: "Titillium Web";
     src: url("./fonts/Titillium_Web/TitilliumWeb-SemiBold.ttf");
