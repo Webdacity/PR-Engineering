@@ -6,7 +6,7 @@
 /* Variables */
 
 :root {
-    --light-blue: #039EE9;
+    --light-blue: rgb(3, 156, 233);
     /* --dark-blue: #EEEFF1; */
     --light-grey: rgb(51, 52, 55);
     --dark-grey: rgb(31, 32, 35);
@@ -1037,26 +1037,6 @@ footer img {
     background-color: var(--dark-grey);
 }
 
-.projects-section>div:nth-child(1) {
-    height: 30vh;
-    background-image: url("../assets/images/projects-page/background2.png");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-}
-
-.projects-section>div:nth-child(1) h1 {
-    text-align: center;
-    position: relative;
-    top: 60%;
-    transform: translateY(-50%);
-    color: var(--light-blue);
-    font-family: "Titillium Web";
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 0;
-}
 
 
 .projects-grid {
@@ -1093,7 +1073,7 @@ footer img {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    opacity: 0;
+    opacity: 1;
 }
 
 .project h6 {
@@ -1111,12 +1091,13 @@ footer img {
 }
 
 .project:hover>div {
-    opacity: 1;
+    opacity: 0;
 }
 
 
 #project1 {
     grid-column: 1/2;
+    background-image: url("../projects/1/main.jpg");
 }
 
 #project2 {
@@ -1153,6 +1134,74 @@ footer img {
 #project10 {
     grid-column: 1/3;
 }
+
+
+
+/* Project Details Page */
+
+.project-landing-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("../projects/Three-Streams-Smokehouse/main.jpg")
+}
+
+.project-landing-section>div {
+    text-align: center;
+    background-color: rgba(31, 32, 35, 0.8);
+    width: 100%;
+    padding: 2% 0;
+}
+
+.project-landing-section>div>div {
+    width: 25%;
+    height: 2px;
+    background-color: var(--light-blue);
+    margin: 0.5% auto;
+}
+
+.project-landing-section h1 {
+    color: white;
+    font-family: "Titillium Web";
+    letter-spacing: 2px;
+    font-size: 50px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.project-landing-section h2 {
+    color: white;
+    font-family: "Titillium Web";
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    color: white;
+    font-size: 26px;
+}
+
+.project-details {
+    padding: 2% 5%;
+    text-align: center;
+    border-top: 5px solid var(--light-blue);
+    /* background-image: url("../assets/images/projects-page/project-description.jpg"); */
+    background-color: rgba(255, 255, 255, 0.082);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1474,13 +1523,18 @@ footer img {
     text-align: center;
     margin: auto;
 }
+
 .services-all .service-grid {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
+
 .service {
     width: 30%;
 }
+
 
 .service p {
     display: flex;

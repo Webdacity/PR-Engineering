@@ -1,0 +1,26 @@
+{
+    "project1": {
+      "name": "V&A Hotel",
+      "Location": "Cape Town",
+      "Engineering Discipline": "WET Services Engineering",
+      "Description": "The V&A Hotel is one of Cape Town’s most illustrious and popular attractions. With having a yearly occupation rate of over 80% it is regarded as one of the best hotels to stay in Cape Town. This popularity demands that all the intricate systems that keep the hotel functioning at 100% should be maintained and kept in perfect working order. In 2018 the hot water system for the hotel was in dire need of an upgrade as one of the boilers responsible for the hot water generation was failing. The boiler was replaced and a full operation system design review was done on the working of the boiler to provide redundancy for the future.",
+      "year": "2018",
+      "home-project": "1"
+    },
+    "project2": {
+      "name": "Three Streams Smokehouse",
+      "Location": "Franschhoek",
+      "Engineering Discipline": "HVAC Engineering",
+      "Description": "PR Engineering partnering with one of Cape Town’s most renowned Air-conditioning & ventilation contractors to provide a turnkey solutions for their packaging facility. The first portion of the project was to provide an installation of a smoke extraction fan that would be connected to the smoker. The second portion is to provide a design for packing area, where a constant temperature, humidity and statutory fresh air needs to be provided and maintained.",
+      "year": "2019",
+      "home-project": ""
+    },
+    "project3": {
+      "name": "The Vineyard",
+      "Location": "Stellenbosch",
+      "Engineering Discipline": "Fire & HVAC Engineering",
+      "Description": "PR Engineering was appointed by reputable property Developer Company for our Fire engineering services to ensure that their new offices would meet all regulatory and statutory regulations. The HVAC was also undertaken and a turnkey solution was offered to save on costs.",
+      "year": "2019",
+      "home-project": ""
+    }
+}
