@@ -10,7 +10,7 @@ if (window.location.pathname === "/projects/") { //Check if Project Page
     var projectLandingImage1 = "url('../projects/" + projectName + "/main.jpg')";
     var projectLandingImage2 = "url('../projects/" + projectName + "/main2.jpg')";
     $(".project-landing-section").css("background-image", projectLandingImage1);
-    $(".project-details").css("background-image", projectLandingImage2);
+    // $(".project-details").css("background-image", projectLandingImage2);
   
     // Set Project Details
   
@@ -25,7 +25,7 @@ if (window.location.pathname === "/projects/") { //Check if Project Page
         // Insert HTML
         $(".project-name").html(project.Name);
         document.title = project.Name;
-        $(".project-location").html(project.Location);
+        $(".project-location").html(project.Location + "<span> - </span>" + project.Year);
         $(".project-type").html(project.Type);
         $(".project-year").html(project.Year);
         $(".project-description").html(project.Description);

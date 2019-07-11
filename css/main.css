@@ -1110,7 +1110,7 @@ footer img {
 
 .project-landing-section>div {
     text-align: center;
-    background-color: rgba(31, 32, 35, 0.8);
+    background-color: rgba(31, 32, 35, 0.9);
     width: 100%;
     padding: 2% 0;
 }
@@ -1122,7 +1122,7 @@ footer img {
     margin: 0.5% auto;
 }
 
-.project-landing-section h1 {
+.project-name {
     color: white;
     font-family: "Titillium Web";
     letter-spacing: 2px;
@@ -1131,7 +1131,7 @@ footer img {
     font-weight: 400;
 }
 
-.project-landing-section h2 {
+.project-location{
     color: white;
     font-family: "Titillium Web";
     font-weight: 400;
@@ -1141,22 +1141,74 @@ footer img {
     font-size: 26px;
 }
 
+.project-location span {
+    color: var(--light-blue);
+}
+
 .project-details {
-    height: 100vh;
     text-align: center;
-    border-top: 10px solid var(--light-blue);
-    background-position: center;
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 10% 100%;
+    background-color: var(--dark-grey);
+}
+
+
+.project-details >div:nth-child(1) {
+    border-bottom: 1px solid var(--light-grey);
+    border-right: 1px solid var(--light-grey);
+}
+
+.project-details >div:nth-child(2) {
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.project-details >div:nth-child(3) {
+    border-right: 1px solid var(--light-grey);
+}
+
+.project-details >div:nth-child(3) img {
+    width: 25%;
+    padding: 20% 0;
+}
+.project-details >div:nth-child(4) {
+    padding: 5% 0 15% 0;
+    background-image: url("../assets/images/Backgrounds/projects.png");
+    background-position: center center;
     background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
+}
+
+.project-details >div:nth-child(4) > div {
+    width: 25%;
+    height: 1px;
+    background-color: var(--light-blue);
+    margin: 0.5% auto;
+
+}
+
+.project-type {
+    color: var(--light-blue);
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.project-description {
+    padding: 1% 10%;
+    color: white;
+    line-height: 1.4;
+    font-weight: 300;
+    font-size: 19px;
+    text-align: justify;
 }
 
 .project-details>div {
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.6);
+    /* background-color: rgba(31, 32, 35, 0.9); */
     width: 100%;
-    padding: 2% 5%;
+    /* padding: 2% 5%; */
+    height: 100%;
 }
 
 
@@ -1304,6 +1356,7 @@ footer img {
     background-size: cover;
     display: grid;
     grid-template-columns: 10% auto;
+    background-attachment: fixed;
 }
 
 
