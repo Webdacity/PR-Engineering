@@ -508,7 +508,7 @@ footer img {
 
 #home-project1 {
     grid-column: 1/4;
-    background-image: url("../assets/images/home/project1.jpg");
+    /* background-image: url("../assets/images/home/project1.jpg"); */
 }
 
 #home-project2 {
@@ -1041,14 +1041,15 @@ footer img {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 140vh;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .project {
-    background-image: url("../assets/images/projects/FNB-Building/project1.jpg");
     background-position: center;
     background-size: cover;
+    height: 40vh;
+    text-decoration: none;
+    transition: 0.6s;
 }
 
 .project h3 {
@@ -1085,55 +1086,13 @@ footer img {
     transition: 0.5s;
 }
 
-.project {
-    text-decoration: none;
-    transition: 0.6s;
-}
 
 .project:hover>div {
     opacity: 0;
 }
 
 
-#project1 {
-    grid-column: 1/2;
-    background-image: url("../projects/1/main.jpg");
-}
 
-#project2 {
-    grid-column: 2/4;
-}
-
-#project3 {
-    grid-column: 4/5;
-}
-
-#project4 {
-    grid-row: 2/4;
-    grid-column: 1/2;
-}
-
-#project5 {
-    grid-column: 2/3;
-}
-
-#project6 {
-    grid-column: 3/5;
-}
-
-#project7 {
-    grid-column: 2/3;
-}
-
-#project8 {
-    grid-row: 3/5;
-    grid-column: 3/4;
-}
-
-
-#project10 {
-    grid-column: 1/3;
-}
 
 
 
@@ -1147,7 +1106,6 @@ footer img {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("../projects/Three-Streams-Smokehouse/main.jpg")
 }
 
 .project-landing-section>div {
@@ -1184,14 +1142,90 @@ footer img {
 }
 
 .project-details {
-    padding: 2% 5%;
+    height: 100vh;
     text-align: center;
-    border-top: 5px solid var(--light-blue);
-    /* background-image: url("../assets/images/projects-page/project-description.jpg"); */
-    background-color: rgba(255, 255, 255, 0.082);
+    border-top: 10px solid var(--light-blue);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+
+.project-details>div {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    padding: 2% 5%;
+}
+
+
+/* Project Gallery */
+
+.project-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.project-image {
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.project-image:hover {
+    opacity: 0.6;
+}
+
+/* Project modal */
+
+.project-modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    overflow: hidden !important;
+    display: none;
+}
+
+.project-modal i {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.project-modal i:hover {
+    color: var(--light-blue);
+    transform: rotate(90deg);
+}
+
+.project-modal>div {
+    position: relative;
+    height: 85%;
+    width: 85%;
+    top: 7.5%;
+    left: 7.5%;
+}
+
+.project-modal img {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 

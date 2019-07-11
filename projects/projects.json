@@ -1,26 +1,38 @@
 {
-    "project1": {
-      "name": "V&A Hotel",
+    "V&A-Hotel": {
+      "Name": "V&A Hotel",
       "Location": "Cape Town",
-      "Engineering Discipline": "WET Services Engineering",
+      "Type": "WET Services Engineering",
       "Description": "The V&A Hotel is one of Cape Town’s most illustrious and popular attractions. With having a yearly occupation rate of over 80% it is regarded as one of the best hotels to stay in Cape Town. This popularity demands that all the intricate systems that keep the hotel functioning at 100% should be maintained and kept in perfect working order. In 2018 the hot water system for the hotel was in dire need of an upgrade as one of the boilers responsible for the hot water generation was failing. The boiler was replaced and a full operation system design review was done on the working of the boiler to provide redundancy for the future.",
-      "year": "2018",
-      "home-project": "1"
+      "Year": "2018",
+      "HomeProject": "1",
+      "ImageCount": "69"
     },
-    "project2": {
-      "name": "Three Streams Smokehouse",
+    "Three-Streams-Smokehouse": {
+      "Name": "Three Streams Smokehouse",
       "Location": "Franschhoek",
-      "Engineering Discipline": "HVAC Engineering",
+      "Type": "HVAC Engineering",
       "Description": "PR Engineering partnering with one of Cape Town’s most renowned Air-conditioning & ventilation contractors to provide a turnkey solutions for their packaging facility. The first portion of the project was to provide an installation of a smoke extraction fan that would be connected to the smoker. The second portion is to provide a design for packing area, where a constant temperature, humidity and statutory fresh air needs to be provided and maintained.",
-      "year": "2019",
-      "home-project": ""
+      "Year": "2019",
+      "HomeProject": "2",
+      "ImageCount": "8"
     },
-    "project3": {
-      "name": "The Vineyard",
+    "The-Vineyard": {
+      "Name": "The Vineyard",
       "Location": "Stellenbosch",
-      "Engineering Discipline": "Fire & HVAC Engineering",
+      "Type": "Fire & HVAC Engineering",
       "Description": "PR Engineering was appointed by reputable property Developer Company for our Fire engineering services to ensure that their new offices would meet all regulatory and statutory regulations. The HVAC was also undertaken and a turnkey solution was offered to save on costs.",
-      "year": "2019",
-      "home-project": ""
+      "Year": "2019",
+      "HomeProject": "3",
+      "ImageCount": "11"
+    },
+    "St.-Tropez": {
+      "Name": "St. Tropez",
+      "Location": "Strand",
+      "Type": "Fire Engineering",
+      "Description": "The St. Tropez building in strand is one of the oldest and most iconic structures that grace the Strand Foreshore with its presence. The massive 12 Storey building was constructed in 1973 and its brutal architectural style is timeless. The building’s fire protection systems were however not satisfactory to the latest standards of the National Building Regulations and posed a great risk to the occupants. PR Engineering was appointed by the body corporate to design and oversee the construction of a new fully functional fire protection system.",
+      "Year": "2019",
+      "HomeProject": "4",
+      "ImageCount": "43"
     }
 }
