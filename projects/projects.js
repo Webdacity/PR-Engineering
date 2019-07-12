@@ -7,8 +7,8 @@ if (window.location.pathname === "/projects/") { //Check if Project Page
   
   
     // Set Landing Images
-    var projectLandingImage1 = "url('../projects/" + projectName + "/main.jpg')";
-    var projectLandingImage2 = "url('../projects/" + projectName + "/main2.jpg')";
+    var projectLandingImage1 = "url('./" + projectName + "/main.jpg')";
+    var projectLandingImage2 = "url('./" + projectName + "/main2.jpg')";
     $(".project-landing-section").css("background-image", projectLandingImage1);
     // $(".project-details").css("background-image", projectLandingImage2);
   
@@ -37,7 +37,7 @@ if (window.location.pathname === "/projects/") { //Check if Project Page
   
         for (i = 0; i < projectImageCount; i++) {
           $(".project-gallery-grid").append("<div class='project-image'></div>");
-          $(".project-gallery-grid .project-image:nth-child(" + (i + 1) + ")").css("background-image", "url('../projects/" + projectName + "/" + (i + 1) + ".jpg')");
+          $(".project-gallery-grid .project-image:nth-child(" + (i + 1) + ")").css("background-image", "url('./" + projectName + "/" + (i + 1) + ".jpg')");
         }
   
   
