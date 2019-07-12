@@ -1558,6 +1558,11 @@ footer img {
 
 .services-scope {
     padding: 5%;
+    background-image: url("../assets/images/Backgrounds/services.png");
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .services-scope .section-heading {
@@ -1601,35 +1606,73 @@ footer img {
     color: var(--dark-grey) !important;
 }
 
-.services-all {
-    padding: 5%;
+.service-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    transition: 0.5s;
 }
 
-.services-all .section-heading * {
+.service-tabs > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin: auto;
+    cursor: pointer;
+}
+
+.service-tabs h1 {
+    font-weight: 600;
+    font-family: "Titillium Web";
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.service-tabs >div img {
+    width: 5%;
+    margin-right: 5px;
+}
+
+.active-tab {
+    background-color: var(--dark-grey);
+    color: white;
 }
 
 .services-all .service-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
+    padding: 2% 5%;
+    background-color: var(--dark-grey);
+    transition: 0.6s;
+    height: auto;
+    border-bottom: 5px solid white;
 }
 
 .service {
-    width: 30%;
+    width: 33.3%;
 }
 
+.service h2 {
+    font-family: "Titillium Web";
+    color: var(--light-blue);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
 
 .service p {
     display: flex;
     align-items: center;
     font-size: 18px;
+    color: white;
 }
 
 .service i {
     color: var(--light-blue);
     font-size: 16px;
-    padding-right: 5%;
+    padding-right: 15px;
+}
+
+#electric-grid, #electronic-grid {
+    display: none;
 }

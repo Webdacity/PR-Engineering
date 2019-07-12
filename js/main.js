@@ -38,18 +38,44 @@ if (location.pathname.split('/').slice(-1)[0] = "projects.html") {
 
           '</div>' +
           '</a>');
-          $("#home-project" + projectHomeNumber).css("background-image",projectArrImage);
-          $("#home-project" + projectHomeNumber).attr("href","./projects/#" + projectArr[i]);
-          $("#home-project" + projectHomeNumber + " h3").html(projectArrName);
-          $("#home-project" + projectHomeNumber + " h6").html(projectLocation);
+        $("#home-project" + projectHomeNumber).css("background-image", projectArrImage);
+        $("#home-project" + projectHomeNumber).attr("href", "./projects/#" + projectArr[i]);
+        $("#home-project" + projectHomeNumber + " h3").html(projectArrName);
+        $("#home-project" + projectHomeNumber + " h6").html(projectLocation);
 
       }
 
       // Set Project Images Home Page
-    
+
     }
   };
 
   xhttp.open("GET", "./projects/projects.json", true);
   xhttp.send();
 }
+
+
+// Project Tabs
+
+$("#mech-tab").click(function() {
+  $(".service-tabs>div").removeClass("active-tab");
+  $(this).addClass("active-tab");
+  $(".services-all .service-grid").css("display","none");
+  $("#mech-grid").css("display","flex");
+});
+
+
+$("#electric-tab").click(function() {
+  $(".service-tabs>div").removeClass("active-tab");
+  $(this).addClass("active-tab");
+  $(".services-all .service-grid").css("display","none");
+  $("#electric-grid").css("display","flex");
+});
+
+
+$("#electronic-tab").click(function() {
+  $(".service-tabs>div").removeClass("active-tab");
+  $(this).addClass("active-tab");
+  $(".services-all .service-grid").css("display","none");
+  $("#electronic-grid").css("display","flex");
+});
