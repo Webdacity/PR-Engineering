@@ -50,6 +50,6 @@ if (location.pathname.split('/').slice(-1)[0] = "projects.html") {
     }
   };
 
-  xhttp.open("GET", "./projects/projects.json", true);
+  xhttp.open("GET", "./projects.json", true);
   xhttp.send();
 }
