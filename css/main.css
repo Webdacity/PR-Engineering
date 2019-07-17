@@ -1695,6 +1695,7 @@ footer img {
     justify-content: center;
     text-align: center;
     cursor: pointer;
+    padding: 0 5%;
 }
 
 .service-tabs h1 {

@@ -29,9 +29,11 @@
     .contact-section {
         height: auto;
     }
+
     .contact-section>div:nth-child(1) {
         padding-top: 20%;
-    } 
+    }
+
     .contact-section>div:nth-child(2) {
         padding-bottom: 20%;
     }
@@ -41,9 +43,22 @@
     }
 
 
+    /* Services Page */
+
+    .services-scope .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service {
+        width: 46%;
+        padding: 0 2%;
+    }
+
+
 }
 
-@media screen and (max-width:600px) {
+
+@media screen and (max-width:678px) {
 
     .contact-form form {
         grid-template-columns: 1fr;
@@ -62,4 +77,24 @@
         left: 30%;
     }
 
+
+    /* Services Page */
+
+    .service-tabs {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+
+    .service {
+        width: 90%;
+        padding: 0 2%;
+    }
+
+    .services-all .service-grid {
+        justify-content: center;
+        align-items: center;
+    }
 }
