@@ -1,0 +1,65 @@
+@media screen and (max-width:991px) {
+
+    /* Mobile Nav */
+
+    #mobile-nav-icon {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    #navbar {
+        display: flex;
+        align-items: center;
+    }
+
+
+    /* Contact Page */
+
+    .contact-section>div:nth-child(2)>div {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-map-section iframe {
+        height: 40vh;
+    }
+
+    .contact-section {
+        height: auto;
+    }
+    .contact-section>div:nth-child(1) {
+        padding-top: 20%;
+    } 
+    .contact-section>div:nth-child(2) {
+        padding-bottom: 20%;
+    }
+
+    .contact-section>div:nth-child(2)>div {
+        width: 90%;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+
+    .contact-form form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form form input,
+    .contact-form form textarea {
+        grid-column: 1/2 !important;
+        width: 90% !important;
+    }
+
+    .contact-form button {
+        grid-column: 1/2 !important;
+        margin: 10px auto;
+        position: relative;
+        left: 30%;
+    }
+
+}

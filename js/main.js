@@ -79,3 +79,17 @@ $("#electronic-tab").click(function() {
   $(".services-all .service-grid").css("display","none");
   $("#electronic-grid").css("display","flex");
 });
+
+
+// Mobile Nav 
+
+function openMobileNav(){
+  $(".mobile-nav").css("border-left","5px solid var(--light-blue)");
+  $(".mobile-nav").css("width","40vw");
+};
+
+function closeMobileNav(){
+  $(".mobile-nav").css("border-left","none");
+  $(".mobile-nav").css("width","0");
+};
+
