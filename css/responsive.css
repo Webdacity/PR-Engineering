@@ -55,6 +55,48 @@
     }
 
 
+    /* Projects */
+    .project-gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* ABout Page */
+
+    .about-section-1 .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section-1 .about-image {
+        display: none;
+    }
+
+
+    /* Home Page */
+
+    .home-contact-section>div:nth-child(2) {
+        width: 80%;
+    }
+
+    .home-services-grid {
+        flex-wrap: wrap;
+    }
+
+    .home-services-grid>div {
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .home-services-section h2 {
+        padding: 2%;
+    }
+
+    .home-projects-grid {
+        width: 90%;
+        margin-right: 0;
+        grid-template-rows: 40vh 30vh 40vh 30vh;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -66,12 +108,46 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .page-heading h1 {
+        font-size: 50px;
+    }
+
+    .project-name {
+        font-size: 40px;
+    }
+
+    .project-landing-section>div>div {
+        margin: 10px auto;
+    }
+
+    .project-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-image {
+        height: 30vh;
+    }
+
 
     /* footer */
 
     footer img {
         width: 20%;
     }
+
+
+    /* about Page */
+
+    .about-team .about-grid {
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+    }
+
+    .team-member {
+        margin-right: 0;
+    }
+
+
 }
 
 
@@ -121,6 +197,53 @@
         padding: 10px 40%;
     }
 
+    /* Projects */
+    .project-details>div:nth-child(4) {
+        background-image: none;
+    }
+
+    /* About PAge */
+    .about-values .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Home Page */
+
+    .home-projects-grid {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        margin-right: 0;
+        grid-template-rows: repeat(5, 30vh);
+    }
+
+    .home-projects-grid>a {
+        grid-column: unset !important;
+    }
+
+    .home-projects-grid>a>div {
+        opacity: 1;
+    }
+
+    .home-projects-grid h3 {
+        font-size: 20px;
+    }
+
+    .home-projects-grid h6 {
+        font-size: 15px;
+    }
+
+    .home-contact-section>div:nth-child(2) {
+        width: 90%;
+    }
+
+    .home-contact-section>div:nth-child(2) {
+        grid-template-columns: 20% 80%;
+    }
+
+    .home-services-grid>div {
+        width: 90%;
+    }
 
 
 }
@@ -150,11 +273,119 @@
         height: 25vh;
     }
 
-    /* Footer */ 
+    .page-heading h1 {
+        font-size: 40px;
+    }
 
-    
+    .project-name {
+        font-size: 35px;
+    }
+
+    .project-location {
+        font-size: 22px;
+    }
+
+    .project-gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 25vh;
+    }
+
+
+
+    /* Footer */
+
+
     footer img {
         width: 25%;
+    }
+
+
+    /* About Page */
+
+    .about-section-1 .about-mv {
+        grid-template-columns: 1fr;
+    }
+
+    .about-member .about-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .member-image {
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .about-body section>div:nth-child(1) {
+        display: none;
+    }
+
+    .about-body section {
+        display: block;
+    }
+
+    .team-member {
+        margin-right: 0;
+    }
+
+
+    /* Home Page */
+
+    .home-projects-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10, 25vh);
+    }
+
+    .home-about-section>div:nth-child(1),
+    .home-services-section>div:nth-child(1) {
+        display: block;
+    }
+
+    .home-projects-section,
+    .home-contact-section {
+        display: block;
+    }
+
+    .home-about-section>div:nth-child(1)>div:nth-child(1),
+    .home-services-section>div:nth-child(1)>div:nth-child(1) {
+        display: none;
+    }
+
+    .home-projects-section>div:nth-child(1),
+    .home-contact-section>div:nth-child(1) {
+        display: none;
+    }
+
+    .home-contact-section>div:nth-child(2) {
+        grid-template-columns: 0% 100%;
+    }
+
+    .home-about-section-text {
+        grid-template-columns: 100% 0%;
+        text-align: center
+    }
+
+    .home-about-section-text>div>div,
+    .home-projects-section>div:nth-child(2)>div:nth-child(1),
+    .home-services-section>div>div:nth-child(2)>div:nth-child(1) {
+        margin: auto;
+    }
+
+    .home-projects-section>div:nth-child(2)>h1,
+    .home-services-section>div>div:nth-child(2)>h1 {
+        text-align: center;
+    }
+
+    .home-contact-section>div:nth-child(2) {
+        margin: 0;
+        width: 100%;
+    }
+
+    .home-contact-section {
+        padding: 15% 5%;
     }
 
 }

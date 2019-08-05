@@ -85,16 +85,16 @@ $("#electronic-tab").click(function() {
 
 function openMobileNav(){
   $(".mobile-nav").css("border-left","5px solid var(--light-blue)");
-  if ($(window).width() <= 678) {
+  if ($(window).width()  <= 678) {
     $(".mobile-nav").css("width","100vw");
   } else {
     $(".mobile-nav").css("width","40vw");
   }
  
-};
+}
 
 function closeMobileNav(){
   $(".mobile-nav").css("border-left","none");
   $(".mobile-nav").css("width","0");
-};
+}
 

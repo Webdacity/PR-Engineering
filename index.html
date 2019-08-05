@@ -39,7 +39,21 @@
             <a href="./projects.html" class="hvr-grow">Projects</a>
             <a href="./contact.html" class="hvr-grow">Contact</a>
         </div>
+        <i class="fal fa-bars" id="mobile-nav-icon" onclick="openMobileNav()"></i>
     </nav>
+
+    <!-- Mobile Nav -->
+
+    <div class="mobile-nav">
+        <i class="fal fa-times-square" onclick="closeMobileNav()"></i>
+        <div>
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./services.html">Services</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
 
     <!-- Landing Home Section -->
 
@@ -70,8 +84,6 @@
 
     <section class="home-about-section">
         <div class="section-grid-lines">
-            <div></div>
-            <div></div>
             <div>
                 <h3 class="section-grid-lines-number">01</h3>
             </div>
@@ -97,99 +109,107 @@
         <div>
             <h3 class="section-grid-lines-number section-grid-lines-number-white">02</h3>
         </div>
-        <div class="home-projects-grid">
-            <a href="" id="home-project1">
-                <div>
-                    <div class="home-project-details">
-                        <h3>FNB Building</h3>
-                        <h6>Cape Town</h6>
+        <div>
+            <div></div>
+            <h1> Projects We've Done In The Past</h1>
+
+            <div class="home-projects-grid">
+                <a href="" id="home-project1">
+                    <div>
+                        <div class="home-project-details">
+                            <h3>FNB Building</h3>
+                            <h6>Cape Town</h6>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="" id="home-project2">
-                <div>
-                    <div class="home-project-details">
-                        <h3>Some Project</h3>
-                        <h6>Somewhere</h6>
+                </a>
+                <a href="" id="home-project2">
+                    <div>
+                        <div class="home-project-details">
+                            <h3>Some Project</h3>
+                            <h6>Somewhere</h6>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="" id="home-project3">
-                <div>
-                    <div class="home-project-details">
-                        <h3>Some Project</h3>
-                        <h6>Somewhere</h6>
+                </a>
+                <a href="" id="home-project3">
+                    <div>
+                        <div class="home-project-details">
+                            <h3>Some Project</h3>
+                            <h6>Somewhere</h6>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="" id="home-project4">
-                <div>
-                    <div class="home-project-details">
-                        <h3>Some Project</h3>
-                        <h6>Somewhere</h6>
+                </a>
+                <a href="" id="home-project4">
+                    <div>
+                        <div class="home-project-details">
+                            <h3>Some Project</h3>
+                            <h6>Somewhere</h6>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="" id="home-project5">
-                <div>
-                    <div class="home-project-details">
-                        <h3>Some Project</h3>
-                        <h6>Somewhere</h6>
+                </a>
+                <a href="" id="home-project5">
+                    <div>
+                        <div class="home-project-details">
+                            <h3>Some Project</h3>
+                            <h6>Somewhere</h6>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="" id="home-project6">
-                <div>
-                    <div class="home-project-details">
-                        <h3>Some Project</h3>
-                        <h6>Somewhere</h6>
+                </a>
+                <a href="" id="home-project6">
+                    <div>
+                        <div class="home-project-details">
+                            <h3>Some Project</h3>
+                            <h6>Somewhere</h6>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="" id="home-project7">
-                <div>
-                    <div class="home-project-details">
-                        <h3>Some Project</h3>
-                        <h6>Somewhere</h6>
+                </a>
+                <a href="" id="home-project7">
+                    <div>
+                        <div class="home-project-details">
+                            <h3>Some Project</h3>
+                            <h6>Somewhere</h6>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="" id="home-project8">
-                <div>
-                    <div class="home-project-details">
-                        <h3>Some Project</h3>
-                        <h6>Somewhere</h6>
+                </a>
+                <a href="" id="home-project8">
+                    <div>
+                        <div class="home-project-details">
+                            <h3>Some Project</h3>
+                            <h6>Somewhere</h6>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="" id="home-project9">
-                <div>
-                    <div class="home-project-details">
-                        <h3>Some Project</h3>
-                        <h6>Somewhere</h6>
+                </a>
+                <a href="" id="home-project9">
+                    <div>
+                        <div class="home-project-details">
+                            <h3>Some Project</h3>
+                            <h6>Somewhere</h6>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="" id="home-project10">
-                <div>
-                    <div class="home-project-details">
-                        <h3>Some Project</h3>
-                        <h6>Somewhere</h6>
+                </a>
+                <a href="" id="home-project10">
+                    <div>
+                        <div class="home-project-details">
+                            <h3>Some Project</h3>
+                            <h6>Somewhere</h6>
+                        </div>
                     </div>
+                </a>
+            </div>
+
+            <div class="home-services-button">
+                    <a href="./projects.html" class="home-services-button hvr-bob">View More Projects</a>
                 </div>
-            </a>
         </div>
     </section>
 
     <section class="home-services-section">
         <div>
-            <div></div>
-            <div></div>
             <div>
                 <h3 class="section-grid-lines-number">03</h3>
             </div>
             <div>
-                <h1>Have a Look at the what we do</h1>
+                <div></div>
+                <h1>Services We Offer</h1>
                 <div class="home-services-grid">
                     <div>
                         <h2>Mechanical Engineering</h2>
@@ -305,7 +325,7 @@
                 <input type="text" placeholder="NAME" name="name" required>
                 <input type="email" placeholder="EMAIL" name="email" required>
                 <input type="phone" placeholder="PHONE" name="phone" required>
-                <input type="text" placeholder="COMPANY" name="company" >
+                <input type="text" placeholder="COMPANY" name="company">
                 <textarea name="message" placeholder="TELL US HOW WE CAN HELP" rows="4" required></textarea>
                 <input type="submit" class="submit-button hvr-bob" onclick="openFormModal()">
             </form>

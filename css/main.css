@@ -96,7 +96,7 @@ html {
     right: 0;
     transition: 0.5s;
     cursor: pointer;
-    display: none ;
+    display: none;
 }
 
 #mobile-nav-icon:hover {
@@ -132,7 +132,7 @@ html {
     transform: rotate(90deg);
 }
 
-.mobile-nav > div {
+.mobile-nav>div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,6 +310,7 @@ footer img {
     font-weight: 400;
     font-size: 60px;
     margin: 0;
+    padding: 0 20px;
 }
 
 .page-heading h1 span {
@@ -460,7 +461,6 @@ footer img {
     width: 100%;
     display: grid;
     grid-template-columns: 10% auto;
-    grid-template-rows: 10% auto;
 }
 
 .section-grid-lines>div:nth-child(1) {
@@ -490,9 +490,7 @@ footer img {
 }
 
 .home-about-section-text>div:nth-child(1) {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 20%;
+    padding: 5%;
 }
 
 .home-about-section-text>div>div {
@@ -529,6 +527,7 @@ footer img {
     font-size: 16px;
     border: 2px solid var(--light-blue);
     transition: 0.4s;
+    margin-bottom: 30px;
 }
 
 
@@ -552,7 +551,7 @@ footer img {
 
 .home-projects-section {
     background-color: var(--light-grey);
-    height: 150vh;
+    /* height: 150vh; */
     display: grid;
     grid-template-columns: 10% auto;
 }
@@ -561,22 +560,37 @@ footer img {
     border-right: 0.5px solid rgba(255, 255, 255, 0.2);
 }
 
+.home-projects-section>div:nth-child(2) {
+    padding: 5%;
+}
+
 .section-grid-lines-number-white {
     color: white;
 }
 
+.home-projects-section>div:nth-child(2)>div:nth-child(1),.home-services-section>div:nth-child(2)>div:nth-child(1) {
+    height: 5px;
+    background-color: var(--light-blue);
+    width: 20%;
+}
+
+.home-projects-section>div:nth-child(2)>h1,.home-services-section>div:nth-child(2)>h1  {
+    font-family: "Titillium Web";
+    color: white;
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
 .home-projects-grid {
     background-color: white;
-    margin-left: 5%;
-    width: 80%;
-    margin-right: 10%;
+    width: 90%;
     position: relative;
-    top: -10%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    margin-top: 5%;
     box-shadow: 5px 5px 10px var(--dark-grey);
-    height: 120%;
-    grid-template-rows: 30% 20% 30% 20%;
+    grid-template-rows: 50vh 40vh 50vh 40vh;
 }
 
 .home-projects-grid>a {
@@ -684,8 +698,12 @@ footer img {
 
 .home-project-details {
     text-align: center;
+    padding: 0 5%;
 }
 
+.home-projects-section .home-services-button {
+    margin-top: 30px;
+}
 
 
 
@@ -699,15 +717,31 @@ footer img {
 .home-services-section {
     background-color: var(--dark-grey);
     background-image: url("../assets/images/home/stats-section.png");
+    height: auto;
 }
 
-.home-services-section>div {
+.home-services-section>div:nth-child(1) {
     display: grid;
     grid-template-columns: 10% auto;
-    grid-template-rows: 15% 85%;
-    height: 100%;
     width: 100%;
+}
 
+.home-services-section>div>div:nth-child(2) {
+    padding: 5%;
+}
+
+.home-services-section>div>div:nth-child(2)>div:nth-child(1) {
+    height: 5px;
+    background-color: var(--light-blue);
+    width: 20%;
+}
+
+.home-services-section>div>div:nth-child(2)>h1  {
+    font-family: "Titillium Web";
+    color: white;
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
 }
 
 .home-services-section .section-grid-lines-number {
@@ -728,23 +762,11 @@ footer img {
 }
 
 .home-services-section>div>div:nth-child(4) {
-    padding-bottom: 40vh;
-}
-
-.home-services-section h1 {
-    font-family: "Titillium Web";
-    color: white;
-    font-size: 34px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    margin: 0;
-    padding: 5% 0 0 5%;
-    text-transform: capitalize;
+    /* padding-bottom: 40vh; */
 }
 
 .home-services-grid {
     display: flex;
-    padding: 0 5%;
     justify-content: space-around;
     margin-top: 2%;
     margin-bottom: 50px;
@@ -801,6 +823,7 @@ footer img {
 
 .home-services-button {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .home-services-button a {
@@ -850,13 +873,15 @@ footer img {
     display: grid;
     grid-template-columns: 40% 60%;
     position: relative;
-    top: -10vh;
     z-index: 2;
     box-shadow: 5px 5px 10px var(--dark-grey);
+    margin: 10% 5%;
 }
 
 .home-contact-section>div>div:nth-child(1) {
     background-image: url("../assets/images/home/about-section.jpg");
+    background-position: left;
+    background-size: cover;
 }
 
 .home-contact-form {
@@ -1192,7 +1217,7 @@ footer img {
     text-align: center;
     background-color: rgba(31, 32, 35, 0.9);
     width: 100%;
-    padding: 2% 0;
+    padding: 2% 2%;
 }
 
 .project-landing-section>div>div {
@@ -1211,7 +1236,7 @@ footer img {
     font-weight: 400;
 }
 
-.project-location{
+.project-location {
     color: white;
     font-family: "Titillium Web";
     font-weight: 400;
@@ -1234,31 +1259,32 @@ footer img {
 }
 
 
-.project-details >div:nth-child(1) {
+.project-details>div:nth-child(1) {
     border-bottom: 1px solid var(--light-grey);
     border-right: 1px solid var(--light-grey);
 }
 
-.project-details >div:nth-child(2) {
+.project-details>div:nth-child(2) {
     border-bottom: 1px solid var(--light-grey);
 }
 
-.project-details >div:nth-child(3) {
+.project-details>div:nth-child(3) {
     border-right: 1px solid var(--light-grey);
 }
 
-.project-details >div:nth-child(3) img {
+.project-details>div:nth-child(3) img {
     width: 25%;
     padding: 20% 0;
 }
-.project-details >div:nth-child(4) {
+
+.project-details>div:nth-child(4) {
     padding: 5% 0 15% 0;
     background-image: url("../assets/images/Backgrounds/projects.png");
     background-position: center center;
     background-size: cover;
 }
 
-.project-details >div:nth-child(4) > div {
+.project-details>div:nth-child(4)>div {
     width: 25%;
     height: 1px;
     background-color: var(--light-blue);
@@ -1349,14 +1375,18 @@ footer img {
     width: 85%;
     top: 7.5%;
     left: 7.5%;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .project-modal img {
     position: relative;
-    height: 100%;
+    max-height: 100%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    display: none;
 }
 
 
@@ -1692,7 +1722,7 @@ footer img {
     transition: 0.5s;
 }
 
-.service-tabs > div {
+.service-tabs>div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1708,7 +1738,7 @@ footer img {
     text-transform: uppercase;
 }
 
-.service-tabs >div img {
+.service-tabs>div img {
     width: 5%;
     margin-right: 5px;
 }
@@ -1754,6 +1784,7 @@ footer img {
     padding-right: 15px;
 }
 
-#electric-grid, #electronic-grid {
+#electric-grid,
+#electronic-grid {
     display: none;
 }
