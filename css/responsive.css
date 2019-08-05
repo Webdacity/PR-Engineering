@@ -246,6 +246,15 @@
     }
 
 
+    .home-landing-text h1 {
+        font-size: 55px;
+    }
+
+    .home-landing-text h2 {
+        font-size: 30px
+    }
+
+
 }
 
 @media screen and (max-width:576px) {
@@ -386,6 +395,15 @@
 
     .home-contact-section {
         padding: 15% 5%;
+    }
+
+    
+    .home-landing-text h1 {
+        font-size: 35px;
+    }
+
+    .home-landing-text h2 {
+        font-size: 24px
     }
 
 }

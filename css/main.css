@@ -381,7 +381,8 @@ footer img {
 }
 
 #homeVideo {
-    width: 100vw;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 .home-landing-text {
@@ -389,7 +390,8 @@ footer img {
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    width: 100%;
+    width: 80%;
+    padding:  0 10%;
 }
 
 .home-landing-text h1 {
@@ -397,7 +399,7 @@ footer img {
     color: white;
     font-size: 70px;
     font-weight: 600;
-    padding: 30px 10%;
+    padding: 30px 0;
     letter-spacing: 5px;
     margin: 0;
 }
@@ -407,7 +409,7 @@ footer img {
     color: white;
     font-size: 40px;
     font-weight: 300;
-    padding: 30px 10%;
+    padding: 30px 0%;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 0;
