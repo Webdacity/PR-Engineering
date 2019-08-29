@@ -1,3 +1,11 @@
+// Page Loader
+
+$(document).ready(()=> {
+  $(".page-loader").fadeOut(1000);
+  $(".page").fadeIn(1000);
+});
+
+
 // Scroll Bar Animate
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {

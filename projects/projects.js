@@ -1,3 +1,12 @@
+// Page Loader
+
+$(document).ready(()=> {
+  $(".page-loader").fadeOut(1000);
+  $(".page").fadeIn(1000);
+});
+
+
+
 // Dynamic Project Results
 
 if (window.location.pathname === "/projects/") { //Check if Project Page
