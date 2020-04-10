@@ -49,6 +49,10 @@ if (window.location.pathname === "/projects/") { //Check if Project Page
         $(".project-gallery-grid .project-image:nth-child(" + (i + 1) + ")").css("background-image", "url('./" + projectName + "/" + (i + 1) + ".jpg')");
       }
 
+      if ($(".project-gallery-grid").children().length == 0) {
+        $("footer").css("border-top","2px solid white");
+      }
+
 
     }
   };

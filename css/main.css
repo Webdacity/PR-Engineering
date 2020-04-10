@@ -871,7 +871,7 @@ footer img {
 
 .home-contact-section>div:nth-child(2) {
     background-color: white;
-    width: 70%;
+    width: 80%;
     margin-left: 10%;
     display: grid;
     grid-template-columns: 40% 60%;
@@ -887,46 +887,6 @@ footer img {
     background-size: cover;
 }
 
-.home-contact-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.home-contact-form>* {
-    width: 70%;
-    margin: 10px 0;
-    text-align: center;
-    padding: 10px;
-    outline: none;
-    font-family: "Open Sans";
-    font-size: 16px;
-    color: var(--dark-grey);
-    font-weight: 400;
-}
-
-.home-contact-form input:focus,
-.home-contact-form textarea:focus {
-    border: 2px solid var(--light-blue);
-}
-
-.home-contact-form .submit-button {
-    width: 30%;
-    background-color: var(--light-blue);
-    font-family: "Open Sans";
-    color: white;
-    font-weight: 400;
-    border: 2px solid var(--light-blue);
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.home-contact-form .submit-button:hover {
-    border: 2px solid var(--dark-grey);
-    background-color: transparent;
-    color: var(--dark-grey);
-}
 
 .home-contact-section h1 {
     font-family: "Titillium Web";
@@ -936,6 +896,27 @@ footer img {
     font-size: 30px;
 }
 
+.home-contact-form {
+    text-align: center;
+    padding: 50px 20px !important;
+}
+
+.home-contact-form input, .home-contact-form textarea {
+    text-align: center !important;
+}
+
+.home-submit {
+    background-color: var(--light-blue) !important;
+    font-family: "Open Sans" !important;
+    color: white !important;
+    font-weight: 400 !important;
+    border: 2px solid var(--light-blue) !important;
+    border-radius: 3px !important;
+    cursor: pointer !important;
+    transition: 0.5s !important;
+    padding: 10px 30px !important;
+    font-size: 17px;
+}
 
 
 
@@ -947,6 +928,7 @@ footer img {
 
 
 
+ 
 
 /* -------------------------------------------- */
 /* CONTACT PAGE */
@@ -989,8 +971,6 @@ footer img {
     background-color: var(--dark-grey);
     padding: 2% 0;
 }
-
-
 
 .contact-info h1,
 .contact-form h1 {
@@ -1085,25 +1065,26 @@ footer img {
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: var(--light-grey);
-    font-weight: 300;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .contact-form input:focus::placeholder {
     color: var(--light-blue);
 }
 
-.contact-form form input:nth-child(1),
-.contact-form form input:nth-child(3) {
+.contact-form form div:nth-child(1),
+.contact-form form div:nth-child(3) {
     grid-column: 1/4;
 }
 
-.contact-form form input:nth-child(2),
-.contact-form form input:nth-child(4) {
+.contact-form form div:nth-child(2),
+.contact-form form div:nth-child(4) {
     grid-column: 4/7;
 }
 
 
-.contact-form form textarea:nth-child(5) {
+.contact-form div:nth-child(5) {
     grid-column: 1/5;
     width: 100%;
 }
@@ -1124,6 +1105,13 @@ footer img {
 .contact-form button i {
     font-size: 20px;
     color: white;
+}
+
+.g-recaptcha {
+    text-align: center;
+    margin: 20px 0;;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -1281,8 +1269,6 @@ footer img {
 }
 
 .project-details>div:nth-child(4) {
-    padding: 5% 0 15% 0;
-    background-image: url("../assets/images/Backgrounds/projects.png");
     background-position: center center;
     background-size: cover;
 }
@@ -1304,7 +1290,7 @@ footer img {
 }
 
 .project-description {
-    padding: 1% 10%;
+    padding: 5% 10%;
     color: white;
     line-height: 1.4;
     font-weight: 300;
@@ -1326,6 +1312,7 @@ footer img {
 .project-gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    background-color: white;
 }
 
 .project-image {
@@ -1827,4 +1814,31 @@ footer img {
 .body-404 .home-landing-button a{
     /* background-color: rgba(3, 156, 233, 0.6);
     border: 1px solid var(--light-blue); */
+}
+
+
+/* ------------------- */
+/* Thank You Page */
+
+.thankyou-section {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../projects/The-Vineyard/main.jpg");
+    background-attachment: fixed;
+    background-position:  center center;
+    background-size: cover;
+}
+
+.thankyou-section div {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    padding: 40px 20px;;
+}
+
+.thankyou-section div h3 {
+    color: var(--light-blue);
 }

@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Contact Us</title>
-        
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Looking to get in touch? Find our contact details here or send us a message and we'll get back.">
-    <meta name="author" content="Webdacity">
-    <meta name="keywords" content="PR Engineering, Engineering, Consulting, Engineering Consultants, Value Engineering, Mechanical Engineering, Fire Engineering, Electrical Engineering, Electronic Engineering, Civil Engineering, Structural Engineering, Statutory Engineering,	Project Management ">
-    
 
- 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Looking to get in touch? Find our contact details here or send us a message and we'll get back.">
+    <meta name="author" content="Webdacity">
+    <meta name="keywords"
+        content="PR Engineering, Engineering, Consulting, Engineering Consultants, Value Engineering, Mechanical Engineering, Fire Engineering, Electrical Engineering, Electronic Engineering, Civil Engineering, Structural Engineering, Statutory Engineering,	Project Management ">
+
+
+
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/main.css">
@@ -89,16 +91,27 @@
                 <div>
                     <div class="contact-form">
                         <h1>Send us a Message</h1>
-                        <form class="gform" method="POST"
-                            action="https://script.google.com/macros/s/AKfycbzHVRvXcCMu1qyhOWapv7lCzwbY9eiPChA8i9LQ/exec">
-                            <input type="text" placeholder="NAME" name="name" required>
-                            <input type="email" placeholder="EMAIL" name="email" required>
-                            <input type="phone" placeholder="PHONE" name="phone" required>
-                            <input type="text" placeholder="COMPANY" name="company">
-                            <textarea name="message" placeholder="TELL US HOW WE CAN HELP" rows="4" required></textarea>
-                            <button type="submit" class="hvr-bob">
+                        <form method="post" name="myemailform" action="./vendors/email/form-to-email.php"
+                            class="contact-form">
+                            <div>
+                                <input type="text" name="name" placeholder="name" required>
+                            </div>
+                            <div>
+                                <input type="email" name="email" placeholder="email" required>
+                            </div>
+                            <div>
+                                <input type="phone" name="phone" placeholder="phone" required>
+                            </div>
+                            <div>
+                                <input type="text" name="company" placeholder="Company" required>
+                            </div>
+                            <div>
+                                <textarea name="message" rows="4" placeholder="Tell us how we can help" required></textarea>
+                            </div>
+                            <button type="submit" name='submit' value="Submit" class="hvr-bob">
                                 <i class="far fa-paper-plane"></i>
                             </button>
+                            <div class="g-recaptcha" data-sitekey="6LdowrYUAAAAALPN5u0k0uTIba19XY_Lx2FtPnYT"></div>
                         </form>
                     </div>
                     <div class="contact-info">
@@ -120,8 +133,10 @@
                             </a>
                         </div>
                         <div class="contact-social">
-                            <a href="https://www.linkedin.com/company/pr-engineering-africa/" target="blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://www.instagram.com/prengineering/?hl=en" target="blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/pr-engineering-africa/" target="blank"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/prengineering/?hl=en" target="blank"><i
+                                    class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -136,8 +151,10 @@
         <footer>
             <img src="./assets/images/Logos/PR-Logo-500-white.png" alt="">
             <div class="footer-social">
-                <a href="https://www.linkedin.com/company/pr-engineering-africa/" target="blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/prengineering/?hl=en" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/pr-engineering-africa/" target="blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/prengineering/?hl=en" target="blank"><i
+                        class="fab fa-instagram"></i></a>
             </div>
             <div class="footer-nav">
                 <a href="./index.html">Home</a>
@@ -161,6 +178,7 @@
 
 
     <script src="./vendors/jquery/jquery-3.3.1.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="./js/main.js"></script>
 
 </body>

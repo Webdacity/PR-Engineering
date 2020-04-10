@@ -157,9 +157,13 @@
         grid-template-columns: 1fr;
     }
 
+    .contact-form > div {
+        grid-column: 1/2 !important;
+    }
+
     .contact-form form input,
     .contact-form form textarea {
-        grid-column: 1/2 !important;
+        
         width: 90% !important;
     }
 

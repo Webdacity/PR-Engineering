@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- Meta -->
+    <link rel="icon" type="image/png" href="../../assets/images/icons/favicon.ico">
+    <meta name="author" content="Webdacity">
+    <meta name="publisher" content="Webdacity" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Thank You</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="" />
+
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+
+    <!-- External Vendors -->
+    <link rel="stylesheet" href="../../vendors/hover.css/hover.css">
+    <link rel="stylesheet" href="../../vendors/font-awesome/css/all.css">
+
+</head>
+
+<body onload="backHome()">
+     <!-- Navbar -->
+     <nav id="navbar">
+        <a class="navbar-logo" href="../../index.html">
+            <img src="../../assets/images/Logos/PR-Favicon.png" alt="">
+            <h1>Engineering</h1>
+        </a>
+
+        <div class="navbar-links">
+            <a href="../../index.html" class="hvr-grow">Home</a>
+            <a href="../../about.html" class="hvr-grow">About</a>
+            <a href="../../services.html" class="hvr-grow">Services</a>
+            <a href="../../projects.html" class="hvr-grow">Projects</a>
+            <a href="../../contact.html" class="hvr-grow">Contact</a>
+        </div>
+        <i class="fal fa-bars" id="mobile-nav-icon" onclick="openMobileNav()"></i>
+    </nav>
+
+    <!-- Mobile Nav -->
+
+    <div class="mobile-nav">
+        <i class="fal fa-times-square" onclick="closeMobileNav()"></i>
+        <div>
+            <a href="../../index.html">Home</a>
+            <a href="../../about.html">About</a>
+            <a href="../../services.html">Services</a>
+            <a href="../../projects.html">Projects</a>
+            <a href="../../contact.html">Contact</a>
+        </div>
+    </div>
+
+
+
+    <!-- Landing Section -->
+
+    <section class="thankyou-section">
+        <div>
+            <img src="../../assets/images/icons/logo-text-big.png" alt="">
+            <h1>Thank you for getting in touch with us!</h1>
+            <h2>We'll get back to you as soon as possible.</h2>
+            <h3>We'll redirect you back to our home page in just a second.</h3>
+        </div>
+    </section>
+
+    <footer>
+        <img src="../../assets/images/Logos/PR-Logo-500-white.png" alt="">
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/company/pr-engineering-africa/" target="blank"><i
+                    class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/prengineering/?hl=en" target="blank"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+        <div class="footer-nav">
+            <a href="../../index.html">Home</a>
+            <a href="../../about.html">About</a>
+            <a href="../../services.html">Services</a>
+            <a href="../../projects.html">Projects</a>
+            <a href="../../contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+            <a href=""><i class="fas fa-map-marker-alt"></i>Stellenbosch, Western Cape</a>
+            <a href="mailto:info@engpr.com"><i class="fas fa-envelope"></i>info@engpr.com</a>
+            <a href="tel:0210125393"><i class="fas fa-phone"></i>021 012 5393</a>
+        </div>
+        <div class="footer-copy">
+            <p> &copy; 2019 PR Engineering - Powered by <a href="http://www.webdacity.co.za/">Webdacity</a></p>
+        </div>
+    </footer>
+
+    <script src="../../vendors/jquery/jquery-3.3.1.js"></script>
+    <script src="../../js/main.js"></script>
+    
+
+
+    <script>
+        Redirect
+
+        function backHome() {
+            setTimeout(() => {
+                window.location.replace("../../index.html");
+            }, 8000);
+        }
+    </script>
+</body>
+
+</html>
