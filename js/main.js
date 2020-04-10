@@ -19,21 +19,20 @@ window.onscroll = function () {
 };
 
 
-
+// Insert in Projects Page Grid & Set Home Projects
 if (location.pathname.split('/').slice(-1)[0] = "projects.html") {
-  // Set All Projects Links
-
-  // JSON
-  var projectImageCount; //Initiate Image Count
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      var response = JSON.parse(xhttp.responseText);
-      var projectArr = Object.keys(response);
+  fetch('./projects/projects.json')
+    .then(response => {
+      return response.json()
+    })
+    .then(projects => {
+      var projectArr = Object.keys(projects);
 
       // Set Project Grid Name & Link
       for (i = 0; i < projectArr.length; i++) {
-        var project = response[projectArr[i]];
+
+        // Set Project Info
+        var project = projects[projectArr[i]];
         var projectLocation = project.Location;
         var projectHomeNumber = project.HomeProject;
         var projectHomeLink = "../"
@@ -46,22 +45,22 @@ if (location.pathname.split('/').slice(-1)[0] = "projects.html") {
 
           '</div>' +
           '</a>');
-        $("#home-project" + projectHomeNumber).css("background-image", projectArrImage);
-        $("#home-project" + projectHomeNumber).attr("href", "./projects/#" + projectArr[i]);
-        $("#home-project" + projectHomeNumber + " h3").html(projectArrName);
-        $("#home-project" + projectHomeNumber + " h6").html(projectLocation);
+
+        // Insert in Home
+        if (projectHomeNumber !== "") {
+          $("#home-project" + projectHomeNumber).css("background-image", projectArrImage);
+          $("#home-project" + projectHomeNumber).attr("href", "./projects/index.html#" + projectArr[i]);
+          $("#home-project" + projectHomeNumber + " h3").html(projectArrName);
+          $("#home-project" + projectHomeNumber + " h6").html(projectLocation);
+        }
+
 
       }
-
-      // Set Project Images Home Page
-
-    }
-  };
-
-  xhttp.open("GET", "./projects/projects.json", true);
-  xhttp.send();
+    })
+    .catch(function (error) {
+      console.log('Request failed', error)
+    });
 }
-
 
 // Project Tabs
 

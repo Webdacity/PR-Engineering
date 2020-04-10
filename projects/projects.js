@@ -18,17 +18,15 @@ if (window.location.pathname === "/projects/index.html") { //Check if Project Pa
   var projectLandingImage1 = "url('./" + projectName + "/main.jpg')";
   var projectLandingImage2 = "url('./" + projectName + "/main2.jpg')";
   $(".project-landing-section").css("background-image", projectLandingImage1);
-  // $(".project-details").css("background-image", projectLandingImage2);
 
   // Set Project Details
 
-  // JSON
-  var projectImageCount; //Initiate Image Count
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function () {
-    if (this.readyState == 4 && this.status == 200) {
-      var response = JSON.parse(xhttp.responseText);
-      var project = response[projectName];
+  fetch('./projects.json')
+    .then(response => {
+      return response.json()
+    })
+    .then(projects => {
+      var project = projects[projectName];
 
       // Insert HTML
       $(".project-name").html(project.Name);
@@ -53,12 +51,12 @@ if (window.location.pathname === "/projects/index.html") { //Check if Project Pa
       }
 
 
-    }
-  };
-
-  xhttp.open("GET", "./projects.json", true);
-  xhttp.send();
+    })
+    .catch(function (error) {
+      console.log('Request failed', error)
+    });
 }
+
 
 // Project Modal
 
