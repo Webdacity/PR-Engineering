@@ -1,6 +1,6 @@
 // Page Loader
 
-$(document).ready(()=> {
+$(document).ready(() => {
   $(".page-loader").fadeOut(1000);
   $(".page").fadeIn(1000);
 });
@@ -8,10 +8,9 @@ $(document).ready(()=> {
 
 
 // Dynamic Project Results
-
-if (window.location.pathname === "/projects/") { //Check if Project Page
+if (window.location.pathname === "/projects/index.html") { //Check if Project Page
   var projectName = window.location.hash; //Get Project Name
-
+  console.log(projectName)
   projectName = projectName.substr(1); //Remove #
 
 
@@ -50,7 +49,7 @@ if (window.location.pathname === "/projects/") { //Check if Project Page
       }
 
       if ($(".project-gallery-grid").children().length == 0) {
-        $("footer").css("border-top","2px solid white");
+        $("footer").css("border-top", "2px solid white");
       }
 
 
@@ -72,11 +71,11 @@ function closeModal() {
 }
 
 
-$(document).on('click','.project-gallery-grid >div',function(){
+$(document).on('click', '.project-gallery-grid >div', function () {
   var modalImage = $(this).css("background-image"); //Get Clicked Image's src
   modalImage = modalImage.slice(5, -2);
   // $(".project-modal img").attr("src", modalImage); // Set modal image src to above
-  $(".project-modal >div").css("background-image",`url(${modalImage})`); // Set modal image src to above
+  $(".project-modal >div").css("background-image", `url(${modalImage})`); // Set modal image src to above
 
   openModal();
 });
@@ -92,17 +91,17 @@ $(".project-image").click(function () {
 
 // Mobile Nav 
 
-function openMobileNav(){
-  $(".mobile-nav").css("border-left","5px solid var(--light-blue)");
-  if ($(window).width()  <= 678) {
-    $(".mobile-nav").css("width","100vw");
+function openMobileNav() {
+  $(".mobile-nav").css("border-left", "5px solid var(--light-blue)");
+  if ($(window).width() <= 678) {
+    $(".mobile-nav").css("width", "100vw");
   } else {
-    $(".mobile-nav").css("width","40vw");
+    $(".mobile-nav").css("width", "40vw");
   }
- 
+
 }
 
-function closeMobileNav(){
-  $(".mobile-nav").css("border-left","none");
-  $(".mobile-nav").css("width","0");
+function closeMobileNav() {
+  $(".mobile-nav").css("border-left", "none");
+  $(".mobile-nav").css("width", "0");
 }
