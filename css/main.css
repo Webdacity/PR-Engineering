@@ -172,11 +172,21 @@ footer {
     font-weight: 300;
     font-size: 14px;
     border-top: 0.5px solid var(--light-grey);
+    padding: 20px 0;
 }
 
 .footer-copy a {
     font-weight: 500;
     text-decoration: none;
+    color: var(--light-blue);
+}
+
+#footer-terms {
+    color: white;
+    padding-bottom: 0.25rem;
+}
+
+#footer-terms:hover {
     color: var(--light-blue);
 }
 
@@ -186,7 +196,6 @@ footer {
 
 .footer-copy p {
     margin: 0;
-    padding: 20px 0;
 }
 
 footer img {
