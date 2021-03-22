@@ -1,4 +1,4 @@
-# PR Engineering"
+# PR Engineering
 A website for an engineering film, showcasing their services & past projects.
 
 ## Link
@@ -17,7 +17,7 @@ Website
 * Bootstrap
 
 ### Industry
-Legal
+Engineering
 
 ### Date
 June 2019
